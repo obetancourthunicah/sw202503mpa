@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pw2handlebarsless</title>
+    <link rel="stylesheet" href="less/style.less" />
+  </head>
+  <body>
+    <header>
+        <section class="branding">
+            <img src="https://picsum.photos/128/64" alt="Logo" />
+            <h1>Historias de un Café</h1>
+        </section>
+        <section class="searchbar">
+            <form action="#searchUri" method="get">
+                <label for="busqueda">Buscar</label>
+                <input type="text" placeholder="Buscar"
+                  name="busqueda" id="busqueda">
+                <button type="submit" name="buscar">Buscar</button>
+            </form>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Gourmet</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="hero-panel large">
+        <picture>
+          <source srcset="https://picsum.photos/id/123/1200/640" media="(min-width:1025px)" />
+          <source srcset="https://picsum.photos/id/123/720/1025" media="(min-width:720)" />
+          <img class="full-image" src="https://picsum.photos/id/123/480/480" alt="Hero Panel Img" />
+        </picture>
+        <section class="hero-action" >
+          <div class="title">
+            Café de Marcala con Pimienta Negra Gourmet Grano Oro
+          </div>
+          <div class="content">
+            Prueba nuestro nuevo producto, semillas seleccionadas a mano por catadores internacionales y secado en hornos solares y tostado con maderos aromáticos.
+          </div>
+          <button class="action-button">
+            Comprar
+          </button>
+        </section>
+      </section>
+      <section class="grid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 p-4">Columna 1</div>
+          <div class="col-12 col-md-6 col-lg-3 p-4">Columna 2</div>
+          <div class="col-12 col-md-6 col-lg-3 p-4">Columna 3</div>
+          <div class="col-12 col-md-6 col-lg-3 p-4">Columna 4</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2025 Derechos Reservados
+    </footer>
+  </body>
+</html>
