@@ -11,24 +11,24 @@
     <!-- Aqui ya valio el header -->
      {{>header}}
     <main>
-      <section class="hero-panel large">
-        <picture>
-          <source srcset="https://picsum.photos/id/123/1200/640" media="(min-width:1025px)" />
-          <source srcset="https://picsum.photos/id/123/720/1025" media="(min-width:720)" />
-          <img class="full-image" src="https://picsum.photos/id/123/480/480" alt="Hero Panel Img" />
-        </picture>
-        <section class="hero-action" >
-          <div class="title">
-            Café de Marcala con Pimienta Negra Gourmet Grano Oro
-          </div>
-          <div class="content">
-            Prueba nuestro nuevo producto, semillas seleccionadas a mano por catadores internacionales y secado en hornos solares y tostado con maderos aromáticos.
-          </div>
-          <button class="action-button">
-            Comprar
-          </button>
-        </section>
-      </section>
+      {{>hero
+        imgDesktop="https://picsum.photos/id/123/1200/640"
+        imgTablet="https://picsum.photos/id/123/1024/640"
+        imgMobile="https://picsum.photos/id/123/480/480"
+        imgAlt="Hero de Index.html"
+        titulo="Café de Marcala con Pimienta Negra Gourmet Grano Oro"
+        descripcion="Prueba nuestro nuevo producto, semillas seleccionadas a mano por catadores internacionales y secado en hornos solares y tostado con maderos aromáticos."
+        accion="Buy"
+      }}
+      {{>hero
+        imgDesktop="https://picsum.photos/id/23/1200/640"
+        imgTablet="https://picsum.photos/id/23/1024/640"
+        imgMobile="https://picsum.photos/id/23/480/480"
+        imgAlt="Hero 2 de Index.html"
+        titulo="Café Brazileño"
+        descripcion="Ni el equipo de Futbol tiene tantos mundiales."
+        accion="Acerca"
+      }}
       <section class="grid">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 p-4">Columna 1</div>
