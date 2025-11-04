@@ -6,6 +6,8 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import HtmlCssPurgePlugin from 'vite-plugin-purgecss';
 import HandlebarsPlugin from 'vite-plugin-handlebars';
 
+import { getData } from './src/data';
+
 function obtenerEntradas(){
     return Object.fromEntries(
         /*[
@@ -40,7 +42,10 @@ export default defineConfig(
         },
         plugins: [
             HandlebarsPlugin({
-                partialDirectory: resolve(__dirname, 'src', 'partials')
+                partialDirectory: resolve(__dirname, 'src', 'partials'),
+                context: (page)=>{
+                    return getData(page);
+                }
             }),
             HtmlCssPurgePlugin(),
             ViteMinifyPlugin()
