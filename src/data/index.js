@@ -1,3 +1,4 @@
+import { getGourmetData } from "./pages/gourmet";
 export const getData = (page)=>{
     console.log("Getting Context Data for page", page);
     let contextData = {};
@@ -6,6 +7,9 @@ export const getData = (page)=>{
             contextData = {
                 mensaje: "Hola Mundo",
             };
+            break;
+        case "/gourmet.html":
+            contextData = getGourmetData();
             break;
         default:
             contextData = { ...contextData }
